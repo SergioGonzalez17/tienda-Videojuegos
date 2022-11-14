@@ -1,0 +1,9 @@
+<p>{{data.user}}</p>
+
+<form [formGroup]="form">
+    <label for="Nombre actualizar"></label>
+    <input formControlName="user" type="text" placeholder="Holi">
+    <button (click)="actualizar()">
+        actualizar
+    </button>
+</form>

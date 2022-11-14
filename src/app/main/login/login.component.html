@@ -1,0 +1,32 @@
+<div class="global-main">
+
+
+    <div class="container-main">
+        <div class="title-principal">
+            <span class="title">Bienvenido a tu espacio favorito de ocio y fantasía</span>
+        </div>
+        <main class="main-content">
+            <img src="https://as01.epimg.net/meristation/imagenes/2021/10/21/noticias/1634804935_638475_1634805201_noticia_normal_recorte1.jpg"
+                alt="principal-image">
+        </main>
+    </div>
+
+    <div>
+            <form  [formGroup]="form" class="form-container">
+                <label class="input-user" for="email">Usuario</label>
+                <input formControlName="user" class="input-placeholder" type="text" id="email" placeholder="correo@ucatolica.edu.co" >
+
+                <label class="input-user" for="password">Contraseña</label>
+                <input formControlName="password" class="input-placeholder" type="password" id="password" placeholder="*****" >
+
+                <button (click)="save()" [disabled]="!form.valid" mat-raised-button class="primary-button">Ingresa</button>
+                <section class="anchor">
+                    <p class="parrafo-style" >¿No tienes cuenta?</p>
+                    <p class="parrafo-style" >Registrate dando click <a href="/Registration" class="parrafo-style" >aqui</a></p>
+                </section>
+            </form>
+    </div>
+
+
+
+</div>

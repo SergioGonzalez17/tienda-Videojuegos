@@ -1,0 +1,17 @@
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+body {
+    box-sizing: border-box;
+    font-family: Helvetica;
+    background-color: var(--background-blue-violet);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --background-blue-violet: #43005e;
+    --faded-green: #00ff8c;
+    --light-violet: #f046b1;
+}
