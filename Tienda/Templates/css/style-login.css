@@ -1,0 +1,104 @@
+:root
+{
+    --background-blue-violet: #43005e;
+    --faded-green: #00ff8c;
+    --light-violet: #f046b1;
+    --black: #000000;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--background-blue-violet);
+}
+.material-symbols-outlined
+{
+    background-color: var(--light-violet);
+    border: 1.5rem solid var(--light-violet);
+    border-radius: 2rem;
+    margin: 3rem 0 3rem 6rem;
+    cursor: pointer;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+.header-content
+{
+    width: 100vw;
+    height: 10vh;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin: 0 65rem 0 15rem;
+    color: var(--faded-green);
+    position: absolute;
+    text-align: center;
+}
+.main-image
+{
+    width: 60rem;
+    height: 32rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    margin: 18rem 0 0 22rem;
+    object-fit: cover;
+}
+.main-content
+{
+    width: 50vw;
+}
+.label
+{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.input
+{
+    background-color: var(--light-violet);
+    border: none;
+    width: 28rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+.input::placeholder
+{
+    font-size: 2rem;
+    color: var(--black);
+}
+.form-container
+{
+    display: grid;
+    justify-content: end;
+    place-items: center;
+    color: var(--faded-green);
+    margin-right: 20rem;
+    gap: 2rem;
+}
+.primary-button
+{
+    width: 14rem;
+    height: 6rem;
+    font-size: 2.6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 3rem;
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--faded-green);
+    background-color: var(--light-violet);
+    cursor: pointer;
+}

@@ -1,0 +1,142 @@
+:root
+{
+    --background-blue-violet: #43005e;
+    --faded-green: #00ff8c;
+    --light-violet: #f046b1;
+    --black: #050202;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.2rem;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--background-blue-violet);
+}
+.material-symbols-outlined
+{
+    background-color: var(--light-violet);
+    border: 1rem solid var(--light-violet);
+    border-radius: 2rem;
+    font-size: 3rem;
+    margin: 2rem 4rem 2rem 15rem;
+    cursor: pointer;
+  font-variation-settings:
+  'FILL' 5,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+.img-games
+{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.main-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-container
+{
+    background-color: var(--light-violet);
+    margin: 5rem;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+.title-one
+{
+    color: var(--faded-green);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.first-content
+{
+    display: flex;
+    font-size: 3rem;
+}
+.img-games-two
+{
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+.title-two
+{
+    color: var(--faded-green);
+    text-align: center;
+    font-size: 3rem;
+}
+.label
+{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.input
+{
+    background-color: var(--light-violet);
+    border: none;
+    width: 28rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+.input::placeholder
+{
+    font-size: 2rem;
+    color: var(--black);
+}
+.form-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    justify-content: flex-end;
+    color: var(--faded-green);
+    gap: 2rem;
+}
+.primary-button
+{
+    width: 14rem;
+    height: 6rem;
+    font-size: 2.6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 3rem 2rem 0 7rem;
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--faded-green);
+    background-color: var(--light-violet);
+    cursor: pointer;
+}
+.main-total
+{
+    font-size: 2.5rem;
+    margin-left: 30rem;
+}
+.label-total
+{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.input-total
+{
+    background-color: var(--light-violet);
+    border: none;
+    width: 20rem;
+    height: 5.5rem;
+    border-radius: 8rem;
+    font-weight: 1000;
+    font-size: 3rem;
+    text-align: center;
+}

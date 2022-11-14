@@ -1,0 +1,122 @@
+:root
+{
+    --background-blue-violet: #43005e;
+    --faded-green: #00ff8c;
+    --light-violet: #f046b1;
+    --black: #050202;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--background-blue-violet);
+}
+.material-symbols-outlined
+{
+    background-color: var(--light-violet);
+    border: 1.5rem solid var(--light-violet);
+    border-radius: 2rem;
+    font-size: 3.5rem;
+    margin: 4rem 4rem 4rem 10rem;
+    cursor: pointer;
+  font-variation-settings:
+  'FILL' 5,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+.profile
+{
+    background-color: var(--light-violet);
+    border: 1.5rem solid var(--light-violet);
+    border-radius: 2rem;
+    margin: 4rem 0 4rem 2rem;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.shopping-cart
+{
+    background-color: var(--light-violet);
+    border: 1.5rem solid var(--light-violet);
+    border-radius: 2rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    cursor: pointer;
+    position: absolute;
+    margin: 4rem 0 4rem 96rem;
+}
+.img-content
+{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.games-image
+{
+    width: 36rem;
+    height: 22rem;
+    border-radius: 10rem;
+    object-fit: cover;
+}
+.social-images
+{
+    width: 4rem;
+    height: 4rem;
+}
+.main-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+.main-container
+{
+    background-color: var(--light-violet);
+    border-radius: 2rem;
+}
+.title-one
+{
+    color: var(--faded-green);
+    font-size: 3.2rem;
+    text-align: center;
+}
+.first-section
+{
+    display: flex;
+    font-size: 3rem;
+    text-align: left;
+}
+.title-two
+{
+    color: var(--faded-green);
+    font-size: 3.2rem;
+    text-align: center;
+}
+.main-container-two
+{
+    background-color: var(--light-violet);
+    border-radius: 2rem;
+}
+.second-section
+{
+    text-align: center;
+}
+.main-container-three
+{
+    background-color: var(--light-violet);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem;
+}
