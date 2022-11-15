@@ -22,7 +22,9 @@
                 <button (click)="save()" [disabled]="!form.valid" mat-raised-button class="primary-button">Ingresa</button>
                 <section class="anchor">
                     <p class="parrafo-style" >¿No tienes cuenta?</p>
-                    <p class="parrafo-style" >Registrate dando click <a href="/Registration" class="parrafo-style" >aqui</a></p>
+                    <p class="parrafo-style" >Registrate dando click <a href="/registration" class="parrafo-style" >aqui</a></p>
+                    <p class="parrafo-style" >¿Olvidaste tu contraseña?</p>
+                    <p class="parrafo-style" >Cambiala dando click <a  class="parrafo-style" (click)="edit()">aqui</a></p>
                 </section>
             </form>
     </div>

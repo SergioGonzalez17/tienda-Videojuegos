@@ -1,9 +1,10 @@
-<p>{{data.user}}</p>
 
 <form [formGroup]="form">
-    <label for="Nombre actualizar"></label>
-    <input formControlName="user" type="text" placeholder="Holi">
-    <button (click)="actualizar()">
+    <label for="Nombre de usuario"></label>
+    <input formControlName="name_client" type="text" placeholder="Sergio_Garzon">
+    <label for="Nueva contraseña"></label>
+    <input formControlName="password" type="password" placeholder="********">
+    <button [disabled]="!form.valid" (click)="actualizar()">
         actualizar
     </button>
 </form>

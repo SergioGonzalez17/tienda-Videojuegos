@@ -9,6 +9,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './components/shared/dialog/dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DialogDeleteComponent } from './components/shared/dialog-delete/dialog-delete.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DialogDeleteComponent } from './components/shared/dialog-delete/dialog-
     BrowserAnimationsModule,
     HttpClientModule,
     MatDialogModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

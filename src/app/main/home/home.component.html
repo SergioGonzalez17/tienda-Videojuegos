@@ -1,20 +1,44 @@
-<div>
-<div>
-    <a style="color: black;" href=""><mat-icon>logout</mat-icon></a>
-</div>
 
-
-    <div>
-        <img src="../../../assets/kratos.jpg" alt="">
-        <input type="text" placeholder="Juego"> 
-        <button  mat-icon-button>
-            <mat-icon>add</mat-icon>
-        </button>
-        <button  mat-icon-button>
-            <mat-icon>edit</mat-icon>
-        </button>
-        <button  mat-icon-button>
-            <mat-icon>delete</mat-icon>
-        </button>
-    </div>
-</div>
+<body>
+    <header>
+        <nav>
+            <a class="container-icon" href="login">
+                <mat-icon class="flecha">logout</mat-icon>
+            </a>
+            <span class="profile">{{data.name_client}}</span>
+        </nav>
+    </header>
+    <main>
+        <section class="main-content">
+            <section class="main-container">
+                <div class="title-one">Últimas Noticias</div>
+                <div class="first-section">
+                    <img class="img-content" src="https://imag.malavida.com/mvimgbig/download-s/god-of-war-34119-0.jpg" alt="God of war">
+                    <p>Los desarolladores están trabajando en un emulador para el metaverso en este grandioso juego.</p>
+                </div>
+                <div class="first-section">
+                    <img class="img-content" src="https://e7.pngegg.com/pngimages/397/492/png-clipart-diablo-ii-lord-of-destruction-diablo-iii-reaper-of-souls-diablo-hellfire-computer-icons-blizzard-entertainment-diablo-iii-emblem-logo.png" alt="Diablo">
+                    <p>Nuevos mundos por explorar, armas y magía para eliminar a los demonios!!</p>
+                </div>
+                <div class="first-section">
+                    <img class="img-content" src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/10/resident-evil-4.jpeg?fit=1920%2C1080&quality=60&strip=all&ssl=1" alt="Resident Evil">
+                    <p>Se esta trabajando en la migración de este clásico juego a la realidad aumentada.</p>
+                </div>
+            </section>
+            <section class="main-container-two">
+                <div class="title-two">Lo nuevo ya esta aquí!</div>
+                <div class="second-section">
+                    <img class="games-image" src="https://as01.epimg.net/meristation/imagenes/2020/07/26/reportajes/1595751264_094537_1595752095_noticia_normal.jpg" alt="Categorias">
+                </div>
+                <div class="second-section">
+                    <img src="../../../assets/add.png" alt="añadir">
+                </div>
+            </section>
+            <section class="main-container-three">
+                <img class="social-images" src="../../../assets/facebook-logo.png" alt="facebook logo">
+                <img class="social-images" src="../../../assets/whatsapp-logo.png" alt="whatsapp logo">
+                <img class="social-images" src="../../../assets/maps-logo.png" alt="maps logo">
+            </section>
+        </section>
+    </main>
+</body>

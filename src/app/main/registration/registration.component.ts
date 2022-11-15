@@ -3,7 +3,8 @@ import { FormGroup, FormControl, Validators, MinLengthValidator} from '@angular/
 import { MatDialog,   } from '@angular/material/dialog';
 import {  DialogComponent } from '../../../app/components/shared/dialog/dialog.component'
 import { DialogDeleteComponent } from '../../../app/components/shared/dialog-delete/dialog-delete.component'
-
+import { ProjectService } from '../../services/peticiones.service'
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-registration',
@@ -11,7 +12,9 @@ import { DialogDeleteComponent } from '../../../app/components/shared/dialog-del
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,
+              public service: ProjectService,
+              private router:Router) { }
   data: any
   dataUpdate: any
   dataDelete: any
@@ -19,14 +22,22 @@ export class RegistrationComponent implements OnInit {
   }
 
   form = new FormGroup({
-    user: new FormControl('', Validators.required || Validators.min(6)),
-    contraseña: new FormControl('', Validators.required || Validators.min(8)),
-    email: new FormControl('', Validators.required ||Validators.email)
+    id_client : new FormControl(null),
+    name_client : new FormControl('', Validators.required || Validators.min(6)),
+    mail : new FormControl('', Validators.required || Validators.min(6)),
+    password: new FormControl('', Validators.required || Validators.min(8)),
   })
+
+ 
 
   save(){
   this.data =  this.form.getRawValue()
-   console.log('Soy la data', this.data)
+   this.service.createUser(this.data).subscribe(res=>{
+      if(res){
+        this.router.navigate([`home/${res.id_client}`], res);
+      }
+   })
+
   }
 
   edit(){

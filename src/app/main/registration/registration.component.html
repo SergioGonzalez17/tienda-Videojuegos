@@ -3,7 +3,7 @@
     <div class="container-img">
 
 
-        <a class="container-icon" href="Login">
+        <a class="container-icon" href="login">
             <mat-icon>logout</mat-icon>
         </a>
         <h1 class="container-img__title">Estas a punto de adentrarte al mundo gaming</h1>
@@ -16,15 +16,14 @@
     <div class="container-form">
         <form [formGroup]="form" class="form-container">
             <label class="input-user" for="user">Nombre usuario</label>
-            <input formControlName="user" class="input-placeholder" type="text" id="user" placeholder="Sergio_Crack">
-
+            <input formControlName="name_client" class="input-placeholder" type="text" id="name_client" placeholder="Sergio_Crack">
 
             <label class="input-user" for="password">Contraseña</label>
-            <input formControlName="contraseña" class="input-placeholder" type="passsword" id="password"
+            <input formControlName="password" class="input-placeholder" type="password" id="password"
                 placeholder="*****">
 
-            <label class="input-user" for="email">Correo</label>
-            <input formControlName="email" class="input-placeholder" type="email" id="email"
+            <label class="input-user" for="mail">Correo</label>
+            <input formControlName="mail" class="input-placeholder" type="email" id="mail"
                 placeholder="correo@ucatolica.edu.co">
 
             <button mat-raised-button [disabled]="!form.valid" (click)="save()" class="primary-button">Crear</button>
