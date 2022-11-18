@@ -1,0 +1,60 @@
+html
+{
+    font-size: 62.5%;
+}
+*{
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --background-blue-violet: #43005e;
+    --faded-green: #00ff8c;
+    --light-violet: #f046b1;
+    --black: #050202;
+}
+.dialog_Style{
+    background-color: #43005e;
+    width: 100%;
+    height: 100%;
+}
+
+.form_style{
+    font-family: Helvetica;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--faded-green);
+}
+
+.label-user{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.input-placeholder_dialog
+{
+    background-color: var(--light-violet);
+    border: none;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+}
+
+.input-placeholder_dialog::placeholder{
+    color: #00FFB1;
+    margin-left: 5px;
+    text-indent: 1rem;
+}
+
+.primary-button{
+    color: #00FFB1;
+    background-color: #f046b1;
+    margin-top: 22px;
+    border-radius: 1.5rem;
+    width: 13rem;
+    height: 3rem;
+}

@@ -7,6 +7,13 @@
             </a>
             <span class="profile">{{data.name_client}}</span>
         </nav>
+            <span class="material-symbols-outlined">
+                <mat-icon class="settings_style" [matMenuTriggerFor]="menu">settings</mat-icon>
+            </span>
+            <mat-menu class="menu_style" #menu="matMenu"> 
+                <button (click)="navUpdate()" mat-menu-item>Cambiar contraseña</button>
+                <button (click)="navDelete()" mat-menu-item>Eliminar cuenta</button>
+            </mat-menu>
     </header>
     <main>
         <section class="main-content">

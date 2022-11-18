@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatDialog,   } from '@angular/material/dialog';
 import {  DialogComponent } from '../../../app/components/shared/dialog/dialog.component'
-
+import { ProjectService } from '../../services/peticiones.service'
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,18 +12,25 @@ import {  DialogComponent } from '../../../app/components/shared/dialog/dialog.c
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public dialog: MatDialog,) { }
+  constructor(public dialog: MatDialog,
+              public service: ProjectService,
+              private router:Router) { }
 
   ngOnInit(): void {
   }
   form = new FormGroup({
-    user: new FormControl('', Validators.required || Validators.min(6)),
+    name_client: new FormControl('', Validators.required || Validators.min(6)),
     password: new FormControl('', Validators.required || Validators.min(8)),
   })
 
   save(){
    let data =  this.form.getRawValue()
-   console.log('Soy la data login', data)
+    this.service.getNameUser(data.name_client).
+    subscribe(res => {
+      if(res){
+        this.router.navigate([`home/${res.id_client}`], res);
+      }
+    })
   }
 
   edit(){
@@ -31,7 +39,6 @@ export class LoginComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('res')
     });
     
   }

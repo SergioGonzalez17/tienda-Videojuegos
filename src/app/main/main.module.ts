@@ -9,6 +9,7 @@ import { GamesComponent } from './games/games.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms'; 
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     ReactiveFormsModule,
+    MatMenuModule
   ],
   providers: [],
 })

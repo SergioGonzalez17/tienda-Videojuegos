@@ -12,21 +12,24 @@
     </div>
 
     <div>
-            <form  [formGroup]="form" class="form-container">
-                <label class="input-user" for="email">Usuario</label>
-                <input formControlName="user" class="input-placeholder" type="text" id="email" placeholder="correo@ucatolica.edu.co" >
+        <form [formGroup]="form" class="form-container">
+            <label class="input-user" for="text">Usuario</label>
+            <input formControlName="name_client" class="input-placeholder" type="text" id="text"
+                placeholder="Sergio_Crack">
 
-                <label class="input-user" for="password">Contraseña</label>
-                <input formControlName="password" class="input-placeholder" type="password" id="password" placeholder="*****" >
+            <label class="input-user" for="password">Contraseña</label>
+            <input formControlName="password" class="input-placeholder" type="password" id="password"
+                placeholder="*****">
 
-                <button (click)="save()" [disabled]="!form.valid" mat-raised-button class="primary-button">Ingresa</button>
-                <section class="anchor">
-                    <p class="parrafo-style" >¿No tienes cuenta?</p>
-                    <p class="parrafo-style" >Registrate dando click <a href="/registration" class="parrafo-style" >aqui</a></p>
-                    <p class="parrafo-style" >¿Olvidaste tu contraseña?</p>
-                    <p class="parrafo-style" >Cambiala dando click <a  class="parrafo-style" (click)="edit()">aqui</a></p>
-                </section>
-            </form>
+            <button (click)="save()" [disabled]="!form.valid" mat-raised-button class="primary-button">Ingresa</button>
+            <section class="anchor">
+                <p class="parrafo-style">¿No tienes cuenta?</p>
+                <p class="parrafo-style">Registrate dando click <a href="/registration" class="parrafo-style">aqui</a>
+                </p>
+                <p class="parrafo-style">¿Olvidaste tu contraseña?</p>
+                <p class="parrafo-style">Cambiala dando click <a class="parrafo-style" (click)="edit()">aqui</a></p>
+            </section>
+        </form>
     </div>
 
 

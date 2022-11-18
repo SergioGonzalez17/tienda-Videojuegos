@@ -24,9 +24,11 @@ export class ProjectService {
   }
 
   updatePassword(data: any): Observable<any> {
-    console.log('data',data);
-    
     return this.http.put(`${baseUrl}/clients_put${data.id_client}`, data)
+  }
+
+  delete(data: any): Observable<any> {
+    return this.http.delete(`${baseUrl}/clients_delete${data.id_client}`, data)
   }
 
 //   getAll(): Observable<any> {

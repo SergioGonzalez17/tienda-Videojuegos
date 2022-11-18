@@ -41,14 +41,12 @@ export class RegistrationComponent implements OnInit {
   }
 
   edit(){
-    console.log('d')
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '250px',
       data: {user: this.data.user},
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('result', result)
       this.dataUpdate = result.user
     });
     

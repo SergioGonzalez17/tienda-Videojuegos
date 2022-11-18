@@ -1,10 +1,11 @@
-
-<form [formGroup]="form">
-    <label for="Nombre de usuario"></label>
-    <input formControlName="name_client" type="text" placeholder="Sergio_Garzon">
-    <label for="Nueva contraseña"></label>
-    <input formControlName="password" type="password" placeholder="********">
-    <button [disabled]="!form.valid" (click)="actualizar()">
-        actualizar
-    </button>
-</form>
+<div class="dialog_Style">
+    <form class="form_style" [formGroup]="form">
+        <label class="label-user" for="Nombre de usuario">{{data.user_name}}</label>
+        <input class="input-placeholder_dialog" formControlName="name_client" type="text" placeholder="Sergio_Garzon">
+        <label class="label-user" for="Nueva contraseña">{{data.password}}</label>
+        <input class="input-placeholder_dialog" formControlName="password" type="password" placeholder="********">
+        <button class="primary-button" [disabled]="!form.valid" (click)="actualizar()">
+            {{data.name_button}}
+        </button>
+    </form>
+</div>
